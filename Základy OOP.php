@@ -1,6 +1,11 @@
 <?php
+declare(strict_types=1);
+/**
+ * @author Richard Sipek
+ */
 class User
 {
+    // konstruktor
     public function __construct()
     {
     }
@@ -15,36 +20,46 @@ class User
     protected $krysa1RichardSipek;
     protected $krysa2RichardSipek;
     protected $krysa3RichardSipek;
-
-    public function getqeckPublicRichardSipek()
+    /**
+     * @return string
+     */
+    public function getqeckPublicRichardSipek(): string
     {
         return $this->qeckPublicRichardSipek;
     }
 
-    public function getdutPublicRichardSipek ()
+    public function getdutPublicRichardSipek (): int 
     {
         return $this->dutPublicRichardSipek;
     }
 
-    public function getblackPublicRichardSipek()
+    public function getblackPublicRichardSipek(): string
     {
         return $this->blackPublicRichardSipek;
     }
 
-    public function getklavesnicePublicRichardSipek()
+    public function getklavesnicePublicRichardSipek(): string
     {
         return $this->klavesnicePublicRichardSipek;
     }
 
-    public function getMysPublicRichardSipek()
+    public function getMysPublicRichardSipek(): string
     {
         return $this->MysPublicRichardSipek;
     }
-    public function setqeckPrivateRichardSipek($qeckPrivateRichardSipek)
+    /**
+     * @param int $qeckPrivateRichardSipek
+     * @return int
+     */
+    public function setqeckPrivateRichardSipek(string $qeckPrivateRichardSipek): string
     {
         return $qeckPrivateRichardSipek;
     }
-    public function setdutPrivateRichardSipek($dutPrivateRichardSipek)
+    /**
+     * @param int $dutPrivateRichardSipek
+     * @return int
+     */
+    public function setdutPrivateRichardSipek(int $dutPrivateRichardSipek): int
     {
         return $dutPrivateRichardSipek;
     }
